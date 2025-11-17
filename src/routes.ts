@@ -1,17 +1,30 @@
 import { createBrowserRouter } from "react-router";
 import HomeLayout from "@/layouts/HomeLayout";
-import { lazy } from "react";
-const Index = lazy(() => import("@/pages"));
+import Index from "@/pages/index";
+import AdminLayout from "@/layouts/AdminLayout";
+import Login from "@/pages/admin/Login";
+import Intro from "@/pages/admin/Home";
 
 const router = createBrowserRouter([
   {
     path: "/",
     Component: HomeLayout,
+    children: [{ index: true, Component: Index }],
+  },
+  {
+    path: "/login",
+    Component: Login,
+  },
+  {
+    path: "/admin",
+    Component: AdminLayout,
     children: [
-      {
-        index: true,
-        Component: Index,
-      },
+      { index: true, Component: Intro },
+      { path: "explore", Component: Intro },
+      { path: "service", Component: Intro },
+      { path: "contact", Component: Intro },
+      { path: "blogs", Component: Intro },
+      { path: "article", Component: Intro },
     ],
   },
 ]);

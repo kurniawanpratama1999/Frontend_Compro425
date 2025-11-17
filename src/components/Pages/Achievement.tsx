@@ -42,7 +42,7 @@ export default function () {
       </div>
       <div className="container mx-auto">
         <div className="grid lg:grid-cols-2 items-center min-h-dvh">
-          <div className="max-w-xl grid gap-5 p-5 items-center">
+          <div className="w-full max-w-xl grid gap-5 p-5 items-center mx-auto">
             <div className="lg:col-start-1 lg:row-start-1 border rounded-2xl max-lg:aspect-video lg:h-90"></div>
             <div className="lg:col-start-1 lg:row-start-2 border rounded-2xl max-lg:aspect-video lg:h-90"></div>
             <div className="lg:col-start-2 lg:row-span-2 border rounded-2xl max-lg:aspect-video lg:h-90"></div>

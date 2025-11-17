@@ -7,7 +7,7 @@ import CtaAgain from "@/components/Pages/CtaAgain";
 import Blogs from "@/components/Pages/Blogs";
 import Contact from "@/components/Pages/Contact";
 
-export default function () {
+export default () => {
   return (
     <>
       {/* HEAD SEO */}
@@ -23,4 +23,4 @@ export default function () {
       <Contact />
     </>
   );
-}
+};
